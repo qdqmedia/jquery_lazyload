@@ -13,6 +13,21 @@
  *
  */
 
+window.getJQueryObj = function(){
+    var isUndefined = function(variable){
+        return typeof variable === 'undefined' || typeof variable === undefined;
+    };
+
+    if(isUndefined(window.$) && isUndefined(window.jQuery)){
+        window.$ = require('jquery');
+        window.jQuery = window.$;
+    } else if(isUndefined(window.$)){
+        window.$ = window.jQuery;
+    } else {
+        window.jQuery = window.$;
+    }
+};
+
 (function($, window, document, undefined) {
     var $window = $(window);
 
@@ -238,4 +253,4 @@
         "left-of-fold"   : function(a) { return !$.rightoffold(a, {threshold : 0}); }
     });
 
-})(jQuery, window, document);
+})(getJQueryObj(), window, document);
