@@ -1,7 +1,7 @@
 {
   "name": "jquery.lazyload",
   "description": "jQuery plugin for lazy loading images",
-  "version": "1.9.8",
+  "version": "1.9.7",
   "main": [
     "jquery.lazyload.js",
     "jquery.scrollstop.js"
