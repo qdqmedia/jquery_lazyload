@@ -241,4 +241,8 @@
         "left-of-fold"   : function(a) { return !$.rightoffold(a, {threshold : 0}); }
     });
 
+    if("object" === typeof exports && "undefined" !== typeof module) {
+      module.exports = $.fn.lazyload;
+    }
+
 })(window, document);
