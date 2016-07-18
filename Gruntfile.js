@@ -29,7 +29,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("grunt-contrib-connect");
 
     grunt.registerTask("test", ["jshint"]);
-    grunt.registerTask("default", ["test", "uglify"]);
+    grunt.registerTask("default", ["test"]);
     grunt.registerTask("server", ["connect"]);
 
 };
