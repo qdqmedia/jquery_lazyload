@@ -48,6 +48,11 @@ All code licensed under the "MIT License":http://www.opensource.org/licenses/mit
 
 h1. Changelog
 
+h2. 1.10.0
+
+* Manage the jQuery dependency internally tring to load from a sibling npm package and fallback on global variable.
+* Export the main lazyload function as node package if we are in a node enviroment like browserify.
+
 h2. 1.9.3
 
 * Improved Bower support

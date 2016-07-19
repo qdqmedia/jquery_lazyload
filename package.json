@@ -1,6 +1,6 @@
 {
   "name": "jquery-lazyload",
-  "version": "1.9.7",
+  "version": "1.10.0",
   "description": "Lazyload images with jQuery",
   "keywords": [
     "jquery-plugin",
